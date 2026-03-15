@@ -1,0 +1,19 @@
+{
+  "name": "cage-core",
+  "version": "0.0.1",
+  "description": "The base agent protocol for CAGE-enabled projects.",
+  "license": "MIT",
+  "files": [
+    "artifacts/"
+  ],
+  "keywords": [
+    "cage",
+    "agents",
+    "ai",
+    "protocol"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dleangen/cage-core.git"
+  }
+}

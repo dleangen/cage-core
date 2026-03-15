@@ -1,0 +1,75 @@
+# cage-core backlog
+# Issues are ordered by priority — top = highest.
+# Statuses: backlog | active | done | cancelled
+# Notes are append-only — never edit existing entries, only add new ones.
+
+issues:
+  - id: CORE-0001
+    title: "Author artifacts/agents.md"
+    status: done
+    created: 2026-03-14
+    updated: 2026-03-14
+    description: >
+      Author the canonical artifacts/agents.md — the distributable agent protocol
+      that cage-cli will seed into new projects. This is the primary deliverable
+      of cage-core.
+    notes:
+      - date: 2026-03-14
+        text: "Project structure scaffolded. Management tooling in place. Ready to author."
+      - date: 2026-03-14
+        text: "Authored. Intentionally minimal at v0.1.0 — orientation, scope discipline,
+          confirm before committing. Commit conventions and backlog management
+          are owned by cage-history and cage-management respectively."
+
+  - id: CORE-0002
+    title: "Add package.json and prepare npm package"
+    status: done
+    created: 2026-03-14
+    updated: 2026-03-14
+    description: >
+      Add package.json declaring cage-core v0.1.0. Ensure artifacts/agents.md
+      is included in the published package. No code — just the protocol file.
+    notes:
+      - date: 2026-03-14
+        text: "Added package.json. Unscoped package name cage-core. Repo under dleangen/cage-core."
+
+  - id: CORE-0003
+    title: "Add MIT LICENSE file"
+    status: backlog
+    created: 2026-03-14
+    updated: 2026-03-14
+    description: >
+      Add MIT LICENSE file locally to match the license on GitHub.
+    notes: []
+
+  - id: CORE-0004
+    title: "Add README.md"
+    status: backlog
+    created: 2026-03-14
+    updated: 2026-03-14
+    description: >
+      Add a public-facing README.md for github.com/dleangen/cage-core.
+      Should explain what CAGE is, what cage-core provides, and how to install it.
+    notes: []
+
+  - id: CORE-0005
+    title: "Set up GitHub Actions CI/CD"
+    status: done
+    created: 2026-03-14
+    updated: 2026-03-14
+    description: >
+      Configure GitHub Actions workflow: on tag v* → publish cage-core to
+      npmjs.com and create a GitHub Release.
+    notes:
+      - date: 2026-03-14
+        text: "Added .github/workflows/publish.yml. Triggers on v* tags. Uses NPM_TOKEN secret."
+
+  - id: CORE-0006
+    title: "Initial commit and tag v0.1.0"
+    status: active
+    created: 2026-03-14
+    updated: 2026-03-14
+    description: >
+      Push the initial commit to github.com/dleangen/cage-core, tag v0.1.0,
+      verify GitHub Release is created and npm package is published and installable.
+    notes: []
