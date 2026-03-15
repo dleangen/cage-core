@@ -1,5 +1,5 @@
 {
-  "name": "cage-core",
+  "name": "@dleangen/cage-core",
   "version": "0.0.1",
   "description": "The base agent protocol for CAGE-enabled projects.",
   "license": "MIT",
