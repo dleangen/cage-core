@@ -1,37 +1,26 @@
 # cage-core
 
-`cage-core` is the protocol layer of the CAGE ecosystem. It defines the canonical `agents.md` specification that governs how AI agents collaborate within a CAGE-enabled project.
+`cage-core` is the protocol layer of the [CAGE ecosystem](https://github.com/dleangen/cage-core). It defines the canonical `agents.md` specification that governs how AI agents collaborate within a CAGE-enabled project.
 
-## What this repo contains
+## What it provides
 
 - **`artifacts/agents.md`** — the distributable agent protocol, seeded into new projects by `cage-cli`.
-- **`agents.md`** — this repo's own agent protocol (governs work on cage-core itself).
-- **`management/backlog.yaml`** — flat issue tracker for cage-core development.
-- **`management/scripts/backlog.py`** — CLI script to manage the backlog.
 
-## Project structure
-
-```
-dev.cageai.core/
-├── agents.md
-├── artifacts/
-│   └── agents.md
-└── management/
-    ├── backlog.yaml
-    └── scripts/
-        └── backlog.py
-```
-
-## Management
+## Installation
 
 ```bash
-python management/scripts/backlog.py list
-python management/scripts/backlog.py show CORE-0001
-python management/scripts/backlog.py note CORE-0001 "Some progress note"
-python management/scripts/backlog.py done CORE-0001
+npm install @dleangen/cage-core
 ```
 
-## Dependencies
+## CAGE ecosystem
 
-- Python 3.10+
-- `pyyaml`
+| Package | Description |
+|---------|-------------|
+| **cage-core** | Agent protocol specification (this package) |
+| [cage-cli](https://github.com/dleangen/cage-cli) | CLI for scaffolding CAGE-enabled projects |
+| [cage-history](https://github.com/dleangen/cage-history) | Conversation history conventions |
+| [cage-management](https://github.com/dleangen/cage-management) | Management tooling for CAGE projects |
+
+## License
+
+MIT — David Leangen 2026
